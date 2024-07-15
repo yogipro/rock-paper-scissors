@@ -1,0 +1,9 @@
+.game-over-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:white;
+    height:100vh;
+    flex-direction: column;
+}

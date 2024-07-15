@@ -1,0 +1,32 @@
+.modal-container{
+    width:max(400px,80%);
+    height:0;
+    position: absolute;
+    animation-name: tv-on;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border:10px solid lightgreen;
+    z-index: 1;
+    background-color: rgb(240, 44, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    & h2{
+        & span {
+            color:lightgreen;
+            font-weight: 1000;
+        }
+    }
+
+}
+@keyframes tv-on{
+    from {height:0}
+    to {
+        height:max(400px,80%);
+    }
+}
