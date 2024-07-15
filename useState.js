@@ -19,7 +19,9 @@ function useState(initialValue){
         },
         setState(value){
             this.value = value;
-            this.notifyObservers();
+            setTimeout(()=>{
+                this.notifyObservers();
+            });
         }
     }
     State.notifyObservers = State.notifyObservers.bind(State);
